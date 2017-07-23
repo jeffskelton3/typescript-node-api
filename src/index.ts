@@ -1,8 +1,10 @@
 import app from './App';
-import * as routes from './routes';
+import { routes, IRoute } from './routes';
 
-routes.mountRoutes();
-
+routes.forEach((route: IRoute) => {
+	app[route.method](route.url, route.callback);
+});
+	
 const port = 3000;
 
 app.listen(port, err => {
