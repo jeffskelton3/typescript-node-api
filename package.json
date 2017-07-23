@@ -17,6 +17,9 @@
     "sequelize": "^4.4.2"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.3",
+    "gulp-typescript": "^3.2.1",
     "sequelize-cli": "^2.7.0",
     "typescript": "^2.4.2"
   }

@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as Sequelize from 'sequelize';
-import * as config from '../config/config.json';
+const config = require('../config/config.json');
 
 import { UsersAttributes, UsersInstance } from './users';
 
