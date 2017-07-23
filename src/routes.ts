@@ -1,5 +1,4 @@
-import app from './App';
-import UsersController from './Controllers/UsersController';
+import UsersController from './controllers/UsersController';
 
 export interface IRoute {
 	method: string,

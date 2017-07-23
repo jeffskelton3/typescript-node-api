@@ -1,4 +1,4 @@
-import app from './App';
+import app from './app';
 import { routes, IRoute } from './routes';
 
 routes.forEach((route: IRoute) => {
