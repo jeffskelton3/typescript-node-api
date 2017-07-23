@@ -1,13 +1,14 @@
-class UsersController {
-    constructor () {
-        
+import UsersService from "../services/UsersService";
 
+class UsersController {
+    async getUsers(req, res) {
+        const users = await UsersService.FindAll();
+        res.json(users);
     }
 
-    getUsers(req, res) {                
-        res.json({
-            message: 'works from the controller'
-        });
+    async createUser(req, res) {
+        const created = await UsersService.Create(req.body);
+        res.json(created);
     }
 }
 

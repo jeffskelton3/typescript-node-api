@@ -11,6 +11,11 @@ export const routes: IRoute[] = [
 		method: 'get',
 		url: '/',
 		callback: UsersController.getUsers
+	},
+	{
+		method: 'post',
+		url: '/user',
+		callback: UsersController.createUser
 	}
 ];
 
