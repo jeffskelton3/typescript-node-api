@@ -1,9 +1,9 @@
-export const config = {
+{
   "development": {
     "username": "postgres",
-    "password": "postgres",
+    "password": "",
     "database": "ts_node_dev",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
