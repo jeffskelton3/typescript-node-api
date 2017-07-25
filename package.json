@@ -1,7 +1,7 @@
 {
-  "name": "nodeappwithtypescript",
+  "name": "Typo",
   "version": "1.0.0",
-  "description": "A template for building nodejs apis with TypeScript",
+  "description": "A NodeJS API written in TypeScript",
   "main": "index.js",
   "scripts": {
     "start": "tsc && node ./dist/index.js",
