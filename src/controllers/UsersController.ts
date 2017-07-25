@@ -1,11 +1,18 @@
 import UsersService from "../services/UsersService";
+import app from '../app';
+import { Get, Post } from '../routes';
 
-class UsersController {
-    async getUsers(req, res) {
-        const users = await UsersService.FindAll();
-        res.json(users);
+
+
+class UsersController {            
+    @Get('/users')
+    getUsers(req, res) {        
+        return res.json({
+            message: 'works with the decorator'
+        });
     }
-
+    
+    @Post('/users')
     async createUser(req, res) {
         const created = await UsersService.Create(req.body);
         res.json(created);
