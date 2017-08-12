@@ -8,7 +8,7 @@ class UsersController extends Controller{
 
     public async getUsers(req, res) {
         try {
-            const users = await  UsersService.FindAll();
+            const users = await UsersService.FindAll();
             return res.json(users);
         } catch (err) {
             return res.send(err);
