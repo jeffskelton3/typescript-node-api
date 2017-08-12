@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as Sequelize from 'sequelize';
 const config = require('../config/config.json');
 
-import { UsersAttributes, UsersInstance } from './users';
+import { UsersAttributes, UsersInstance } from './users.model';
 
 interface DbConnection {
     Users: Sequelize.Model<UsersInstance, UsersAttributes>;
@@ -24,7 +24,7 @@ const basename = path.basename(module.filename);
 fs
     .readdirSync(__dirname)
     .filter(function (file) {
-        return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
+        return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.ts');
     })
     .forEach(function (file) {
         let model = sequelize['import'](path.join(__dirname, file));

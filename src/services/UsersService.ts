@@ -1,5 +1,5 @@
 import db from '../models/index';
-import {UsersAttributes, UsersInstance} from '../models/users';
+import {UsersAttributes, UsersInstance} from '../models/users.model';
 import { ValidationService } from './ValidationService';
 
 class UsersService {

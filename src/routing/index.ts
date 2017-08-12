@@ -1,5 +1,5 @@
 
-import UserController from './controllers/UsersController';
+import UserController from '../controllers/users.controller';
 
 export interface IRoute {
 	method: string,
@@ -12,6 +12,11 @@ export const routes: IRoute[] = [
         method: 'get',
         url: '/',
         callback: UserController.getUsers
+    },
+    {
+        method: 'post',
+        url: '/users',
+        callback: UserController.createUser
     }
 ];
 
