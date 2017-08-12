@@ -1,5 +1,5 @@
 import Controller from './controller';
-import UsersService from "../services/UsersService";
+import UsersService from "../services/users.service";
 
 class UsersController extends Controller{
     constructor() {

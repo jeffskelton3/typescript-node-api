@@ -1,6 +1,6 @@
 import db from '../models/index';
 import {UsersAttributes, UsersInstance} from '../models/users.model';
-import { ValidationService } from './ValidationService';
+import { ValidationService } from './validation.service';
 
 class UsersService {
     private _requiredFields: string[] = ['name'];
