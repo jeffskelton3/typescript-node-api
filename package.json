@@ -7,7 +7,7 @@
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
     "tsc": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha -r ts-node/register src/tests/**/*test.ts"
   },
   "author": "Jeff Skelton",
   "license": "ISC",
@@ -18,8 +18,11 @@
     "sequelize": "^4.4.3"
   },
   "devDependencies": {
+    "@types/chai": "^4.0.3",
+    "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.20",
-    "codelyzer": "^3.1.2",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
     "nodemon": "^1.11.0",
     "reflect-metadata": "^0.1.10",
     "sequelize-cli": "^2.8.0",
