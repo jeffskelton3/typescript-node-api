@@ -1,5 +1,5 @@
 import app from './app';
-import { routes, IRoute } from './routes';
+import { routes, IRoute } from './routing';
 
 routes.forEach((route: IRoute) => {
 	app[route.method](route.url, route.callback);
